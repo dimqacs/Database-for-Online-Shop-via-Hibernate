@@ -79,26 +79,26 @@ public class App {
         dimqacs.setUserEmail("dzicdmitrii@gmail.com");
         dimqacs.setUserRegistredDate(LocalDate.of(2020,1,1));
 
-        User iulianocika = new User();
-        iulianocika.setUserName("Iulia");
-        iulianocika.setUserSurname("Dzic");
-        iulianocika.setUserPhone("+373 68 983 007");
-        iulianocika.setUserEmail("blaknight444@gmail.com");
-        iulianocika.setUserRegistredDate(LocalDate.of(2022,8,10));
+        User iulia = new User();
+        iulia.setUserName("Iulia");
+        iulia.setUserSurname("Rusu");
+        iulia.setUserPhone("+373 00 00 007");
+        iulia.setUserEmail("rusuiulua@gmail.com");
+        iulia.setUserRegistredDate(LocalDate.of(2022,8,10));
 
-        User nasya = new User();
-        nasya.setUserName("Nastya");
-        nasya.setUserSurname("Melnic");
-        nasya.setUserPhone("+373 68 143 168");
-        nasya.setUserEmail("melnicnastya@gmail.com");
-        nasya.setUserRegistredDate(LocalDate.of(2021,5,24));
+        User nastya = new User();
+        nastya.setUserName("Nastya");
+        nastya.setUserSurname("Ceban");
+        nastya.setUserPhone("+373 11 111 111");
+        nastya.setUserEmail("cebannastya@gmail.com");
+        nastya.setUserRegistredDate(LocalDate.of(2021,5,24));
 
-        User kinnaamf = new User();
-        kinnaamf.setUserName("Dmitrii");
-        kinnaamf.setUserSurname("Melnic");
-        kinnaamf.setUserPhone("+373 78 606 595");
-        kinnaamf.setUserEmail("melnicdmitrii@mail.ru");
-        kinnaamf.setUserRegistredDate(LocalDate.of(2021,9,15));
+        User dimrusu = new User();
+        dimrusu.setUserName("Dmitrii");
+        dimrusu.setUserSurname("Rusu");
+        dimrusu.setUserPhone("+373 33 333 333");
+        dimrusu.setUserEmail("rusudima@mail.ru");
+        dimrusu.setUserRegistredDate(LocalDate.of(2021,9,15));
 
         Order firstOrder = new Order();
         firstOrder.setUserOrder(dimqacs);
@@ -106,7 +106,7 @@ public class App {
         firstOrder.setOrderStatus("Delivered");
 
         Order secondOrder = new Order();
-        secondOrder.setUserOrder(kinnaamf);
+        secondOrder.setUserOrder(dimrusu);
         secondOrder.setOrderCreatedDate(LocalDate.of(2023,4,15));
         secondOrder.setOrderStatus("Not Delivered");
 
@@ -154,9 +154,9 @@ public class App {
         session.persist(Iphone11);
         session.persist(HPPavilion);
         session.persist(dimqacs);
-        session.persist(iulianocika);
-        session.persist(nasya);
-        session.persist(kinnaamf);
+        session.persist(iulia);
+        session.persist(nastya);
+        session.persist(dimrusu);
         session.persist(firstOrder);
         session.persist(secondOrder);
         session.persist(firstItem);
